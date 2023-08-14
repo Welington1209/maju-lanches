@@ -1,0 +1,177 @@
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.topo .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.topo .menu li {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    transition: .8s ease-in-out;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.topo .menu li:hover {
+    background-color: #000;
+    scale: 1.4;
+    rotate: 360deg;
+}
+
+.topo .menu li a {
+    color: #000;
+    font-weight: 700;
+}
+
+.topo .menu li:hover a {
+    color: aliceblue;
+}
+
+.topo a h1 {
+    color: #000;
+    font-weight: 900;
+    text-decoration: underline;
+    border: 2px solid;
+    padding: 5px 10px;
+    transition: .8s ease-in-out;
+}
+
+.topo a h1:hover {
+    background-color: #000;
+    color: aliceblue;
+}
+
+.topo .menu-label {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.topo nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.topo .hamburguer-menu {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    display: block;
+    top: 29px;
+    left: 15px;
+    transition: .6s ease-in-out;
+}
+
+.topo .hamburguer-menu:before,
+.topo .hamburguer-menu:after {
+    background-color: #000;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+
+.topo .hamburguer-menu:before {
+    top: -10px;
+}
+
+.topo .hamburguer-menu:after {
+    bottom: -10px;
+}
+
+.topo input {
+    display: none;
+}
+
+.topo input:checked~label .hamburguer-menu {
+    transform: rotate(45deg);
+}
+
+.topo input:checked~label .hamburguer-menu:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.topo input:checked~label .hamburguer-menu:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .topo nav {
+        position: absolute;
+        top: 26px;
+        right: 25px;
+        z-index: 1;
+    }
+
+    .topo nav .menu {
+        display: none;
+    }
+
+    .topo .menu li {
+        margin: 15px;
+        text-align: center;
+        display: block;
+    }
+
+    .topo nav .menu-label {
+        display: block;
+    }
+
+
+    .topo input:checked~.menu {
+        display: block;
+    }
+}
+
+@media (max-width: 415px) {
+    .topo {
+        padding: 30px 15px;
+    }
+
+    .topo nav {
+        top: 25px;
+        right: 0px;
+    }
+
+    .topo nav .menu {
+        background-color: #ed9191;
+        padding: 10px;
+    }
+
+    .topo nav .menu li:hover {
+        scale: 1.2;
+    }
+
+    .topo a h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 310px) {
+    .topo {
+        padding: 20px 10px;
+    }
+
+    .topo nav {
+        top: 8px;
+        right: 0;
+    }
+
+    .topo a h1 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(-90deg, #ed9191 0%, #58529a 100%);
+    background-size: 400%;
+    animation: animar 4s alternate infinite;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+main {
+    max-width: 100%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.transition {
+    transition: .6s;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-align {
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+
+.background:hover {
+    scale: 1.1;
+}
+
+.hamburguer {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    list-style: none;
+    animation: rotate 2s linear infinite;
+}
+
+.hamburguer img {
+    width: 100%;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes animar {
+    0% {
+        background-position: 10%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+@media (max-width: 415px) {
+    .background {
+        scale: .8;
+    }
+}

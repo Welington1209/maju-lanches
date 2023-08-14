@@ -1,0 +1,117 @@
+.lanches,
+.porcoes,
+.combos {
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container {
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: linear-gradient(-45deg, #9f9f9f 0%, #131313 100%);
+    box-shadow: 0 15px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 1s;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .caixa-img {
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    top: 20px;
+    overflow: hidden;
+}
+
+.container .card .caixa-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .conteudo {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 30px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.container .card .conteudo p {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.container .card .conteudo h3 {
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+.container .card .conteudo .valor {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+
+.container .card:hover .caixa-img {
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px;
+    border-radius: 40%;
+    opacity: 70%;
+}
+
+.container .card:hover .conteudo {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .conteudo a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px solid;
+    color: black;
+    font-style: normal;
+}
+
+.container .card .conteudo a:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+@media (max-width: 415px) {
+    .container .card {
+        scale: .75;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+
+    .container {
+        gap: 50px 50px;
+        padding: 100px 50px;
+    }
+}
