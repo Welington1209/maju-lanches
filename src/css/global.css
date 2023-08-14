@@ -10,9 +10,10 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(-90deg, #ed9191 0%, #58529a 100%);
-    background-size: 400%;
-    animation: animar 4s alternate infinite;
+    /* background: linear-gradient(-90deg, #ed9191 0%, #58529a 100%); */
+    background: url(../image/Maju\ \(1\).png);
+    background-size: contain;
+    animation: animar 15s linear infinite;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -84,16 +85,26 @@ main {
 
 @keyframes animar {
     0% {
-        background-position: 10%;
+      
     }
 
     100% {
-        background-position: 100%;
+        background-position: 110%;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        animation: animar 30s linear infinite;
     }
 }
 
 @media (max-width: 415px) {
     .background {
         scale: .8;
+    }
+
+    body {
+        animation: animar 100s linear infinite;
     }
 }
