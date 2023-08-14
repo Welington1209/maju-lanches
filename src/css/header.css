@@ -36,7 +36,7 @@
 }
 
 .topo a h1 {
-    color: #000;
+    color: #fff;
     font-weight: 900;
     text-decoration: underline;
     border: 2px solid;
@@ -64,7 +64,7 @@
 .topo .hamburguer-menu {
     width: 30px;
     height: 2px;
-    background-color: #000;
+    background-color:aliceblue;
     position: relative;
     display: block;
     top: 29px;
@@ -74,7 +74,7 @@
 
 .topo .hamburguer-menu:before,
 .topo .hamburguer-menu:after {
-    background-color: #000;
+    background-color: aliceblue;
     position: absolute;
     content: '';
     display: block;

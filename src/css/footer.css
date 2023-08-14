@@ -7,7 +7,7 @@
 }
 
 .atribuicoes li a {
-    color: rgb(133, 3, 198);
+    color: #fff;
     border: 1px solid;
     padding: 10px;
     font-weight: 500;
@@ -27,6 +27,7 @@
 .social-media .outer-shadow {
     font-size: 2rem;
     padding: 20px;
+    color: #fff;
 }
 
 .social-media .outer-shadow:hover {
@@ -58,5 +59,12 @@
 
     .container .card {
         scale: .75;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .atribuicoes li a {
+        font-size: .5rem;
     }
 }
