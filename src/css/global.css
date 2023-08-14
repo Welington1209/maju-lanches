@@ -10,7 +10,6 @@
 
 body {
     min-height: 100vh;
-    /* background: linear-gradient(-90deg, #ed9191 0%, #58529a 100%); */
     background: url(../image/Maju\ \(1\).png);
     background-size: contain;
     animation: animar 15s linear infinite;
