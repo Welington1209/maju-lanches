@@ -10,10 +10,22 @@
 
 body {
     min-height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: relative;
+}
+
+body:before {
+    content: '';
+    position: absolute;
     background: url(../image/Maju\ \(1\).png);
     background-size: contain;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
     animation: animar 15s linear infinite;
-    font-family: 'Montserrat Alternates', sans-serif;
+    z-index: -1;
+    bottom: 0;
 }
 
 main {
@@ -24,6 +36,7 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 0;
 }
 
 .transition {
@@ -86,9 +99,7 @@ main {
 }
 
 @keyframes animar {
-    0% {
-      
-    }
+    0% {}
 
     100% {
         background-position: 110%;
@@ -96,8 +107,8 @@ main {
 }
 
 @media (max-width: 900px) {
-    body {
-        animation: animar 30s linear infinite;
+    body:before {
+        animation: animar 50s linear infinite;
     }
 }
 
@@ -106,7 +117,7 @@ main {
         scale: .8;
     }
 
-    body {
+    body:before {
         animation: animar 100s linear infinite;
     }
 }

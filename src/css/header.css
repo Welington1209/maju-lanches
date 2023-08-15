@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .topo .menu {
@@ -14,25 +14,28 @@
     padding: 5px 10px;
     display: flex;
     align-items: center;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
+    background-color: #000;
     transition: .8s ease-in-out;
     cursor: pointer;
     font-size: 1.2rem;
+    z-index: 1;
+
 }
 
 .topo .menu li:hover {
-    background-color: #000;
+    background-color: #ffffff;
     scale: 1.4;
     rotate: 360deg;
 }
 
 .topo .menu li a {
-    color: #fff;
+    color: #ffffff;
     font-weight: 700;
 }
 
 .topo .menu li:hover a {
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .topo .logo {
