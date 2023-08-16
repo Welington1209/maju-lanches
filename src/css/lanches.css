@@ -14,8 +14,8 @@
     position: relative;
     width: 350px;
     height: 300px;
-    background: linear-gradient(-45deg, #949494, #373737, #000000);
-    box-shadow: 0 15px 45px;
+    background: linear-gradient(-45deg, #949494, #373737, #000);
+    box-shadow: 0 0 20px var(--cor-principal), inset 0 0 10px var(--cor-principal);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -60,7 +60,8 @@
 .container .card .conteudo p {
     font-weight: 500;
     font-style: italic;
-    color: aliceblue;
+    color: var(--cor-principal);
+    text-shadow: 0 0 15px var(--cor-secundaria);
 }
 
 .container .card .conteudo h3 {
@@ -72,7 +73,7 @@
     font-weight: 700;
     font-size: 1.2rem;
     font-style: normal;
-    color: #000000;
+    color: var(--cor-secundaria);
 }
 
 .container .card:hover .caixa-img {
@@ -93,13 +94,13 @@
     margin-top: 15px;
     padding: 10px 20px;
     border: 2px solid;
-    color: black;
+    color: var(--cor-secundaria);
     font-style: normal;
 }
 
 .container .card .conteudo a:hover {
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
 
 @media (max-width: 415px) {

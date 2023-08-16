@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat Alternates', sans-serif;
     position: relative;
+    background-color: var(--cor-secundaria);
 }
 
 body:before {
@@ -22,7 +23,7 @@ body:before {
     top: 0;
     left: 0;
     right: 0;
-    opacity: .7;
+    opacity: .1;
     animation: animar 15s linear infinite;
     z-index: -1;
     bottom: 0;
@@ -33,8 +34,6 @@ main {
     gap: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     border-radius: 0;
 }
@@ -53,13 +52,22 @@ main {
     align-items: center;
 }
 
+.box-shadow {
+    box-shadow: 0 0 10px var(--cor-principal), inset  0 0 10px var(--cor-principal);
+    text-shadow: 0 0 5px var(--cor-principal);
+}
+
 .section-title h2 {
     font-size: 2.5rem;
+    margin: 15px;
     text-transform: uppercase;
-    color: aliceblue;
-    background-color: #000;
+    color: var(--cor-secundaria);
+    text-shadow: 0 0 5px var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 0 15px var(--cor-principal), inset  0 0 10px var(--cor-principal);
     padding: 10px;
-    border: 2px solid #fff;
+    border: 1px solid var(--cor-principal);
+    text-align: center;
 }
 
 .background {

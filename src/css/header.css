@@ -14,8 +14,8 @@
     padding: 5px 10px;
     display: flex;
     align-items: center;
-    border: 2px solid #ffffff;
-    background-color: #000;
+    border: 1px solid var(--cor-principal);
+    background-color: var(--cor-secundaria);
     transition: .8s ease-in-out;
     cursor: pointer;
     font-size: 1.2rem;
@@ -24,35 +24,36 @@
 }
 
 .topo .menu li:hover {
-    background-color: #ffffff;
+    background-color: var(--cor-principal);
+    box-shadow: inset 0 0 15px var(--cor-secundaria);
     scale: 1.4;
     rotate: 360deg;
 }
 
 .topo .menu li a {
-    color: #ffffff;
+    color: var(--cor-secundaria);
     font-weight: 700;
 }
 
 .topo .menu li:hover a {
-    color: rgb(0, 0, 0);
+    color: var(--cor-secundaria);
 }
 
 .topo .logo {
     width: 50px;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid #fff;
 }
 
 .topo a:hover .logo {
     scale: 1.1;
-    border: 1px solid #fff;
+    border: 2px solid var(--cor-principal);
+    box-shadow: 0 0 20px var(--cor-principal);
 }
 
 .topo a h1:hover {
-    background-color: #000;
-    color: aliceblue;
+    background-color:var(--cor-secundaria);
+    color: var(--cor-principal);
 }
 
 .topo .menu-label {
@@ -70,23 +71,24 @@
 .topo .hamburguer-menu {
     width: 30px;
     height: 2px;
-    background-color:aliceblue;
+    background-color:var(--cor-principal);
     position: relative;
     display: block;
-    top: 29px;
-    left: 15px;
+    top: 25px;
+    left: 20px;
     transition: .6s ease-in-out;
 }
 
 .topo .hamburguer-menu:before,
 .topo .hamburguer-menu:after {
-    background-color: aliceblue;
+    background-color: var(--cor-principal)e;
     position: absolute;
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     transition: .3s ease-in-out;
+    box-shadow: 0 0 10px var(--cor-principal), inset  0 0 10px var(--cor-principal);
 }
 
 .topo .hamburguer-menu:before {
@@ -154,7 +156,7 @@
     }
 
     .topo nav .menu {
-        background-color: #ed9191;
+        background-color: var(--cor-secundaria);
         padding: 10px;
     }
 
